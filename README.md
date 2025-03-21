@@ -5,7 +5,7 @@ This bundle helps to extend admin ui
 Requirements
 ------------
 
-* eZ Platform 2.5+ 
+* Ibexa 4.6+
 
 ## Install instructions
 
@@ -17,7 +17,7 @@ Requirements
         // ...
         {
             "type": "vcs",
-            "url": "https://github.com/rhidja/ExtendingTutorialBundle"
+            "url": "https://github.com/rhidja/ezskeleton-bundle"
         }
     ],
     ```
@@ -25,11 +25,11 @@ Requirements
 2. Install the bundle via Composer (initial installation):
 
     ```
-    $ composer require rhidja/extending-tutorial-bundle
+    $ composer require rhidja/ezskeleton-bundle
     ```
     2.1 Update the bundle via Composer if needed
     ```
-    $ composer update rhidja/extending-tutorial-bundle
+    $ composer update rhidja/ezskeleton-bundle
     ```
 
 3. Activate the bundle in your `app/AppKernel.php`:
@@ -37,7 +37,7 @@ Requirements
     ```php
     $bundles = [
         ...
-        new Kabylia\EzSkeletonBundle\EzSystemsExtendingTutorialBundle(),
+        new Kabylia\EzSkeletonBundle\KabyliaEzSkeletonBundle(),
         ...
     ];
     ```
@@ -45,6 +45,7 @@ Requirements
 4. Update app/config/routing.yml
 
     ```
-    ez_systems_udw_tab_tutorial:
-        resource: "@EzSystemsExtendingTutorialBundle/Resources/config/routing.yml"
+    ibexa_udw_tab_tutorial:
+        resource: "@KabyliaEzSkeletonBundle/Resources/config/routing.yml"
         prefix:   /
+   ```
