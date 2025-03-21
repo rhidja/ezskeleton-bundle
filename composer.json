@@ -9,7 +9,7 @@
         }
     ],
     "require" : {
-        "php": "^8.4",
+        "php": ">=7.4",
         "ibexa/core": "~4.6.0",
         "http-interop/http-factory-guzzle": "^1.2"
     },
