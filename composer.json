@@ -9,8 +9,9 @@
         }
     ],
     "require" : {
-        "php": "^7.1",
-        "ezsystems/ezpublish-kernel": "^7.5"
+        "php": "^8.4",
+        "ibexa/core": "~4.6.0",
+        "http-interop/http-factory-guzzle": "^1.2"
     },
     "autoload" : {
         "psr-4" : {
@@ -20,6 +21,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.1.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
         }
     }
 }
